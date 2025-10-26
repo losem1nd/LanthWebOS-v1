@@ -7,13 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="deviceWarning" class="hidden">
-    <p>Any devices other than Computer are not available for this website yet.</p>
-  </div>
 
   <div class="center-container">
     <h2 id="passwordTitle" class="title">Enter password</h2>
     <div class="input-group">
+      <label for="userInput" class="hidden">Enter password</label>
       <input id="userInput" type="text" placeholder="Enter number...">
       <button id="enterBtn">Enter</button>
     </div>
@@ -21,8 +19,7 @@
 
   <div id="snackbar">Wrong password</div>
 
-  <!-- Popup for 111 -->
-  <div id="customPopup">
+  <div id="customPopup" class="popup">
     <div class="popup-content">
       <span class="close-btn">&times;</span>
       <p><strong>111:</strong> Summon this Window</p>
@@ -30,18 +27,24 @@
     </div>
   </div>
 
-  <!-- Popup for Lanth v0.12 -->
   <div id="lanthPopup">
     <div class="popup-content">
       <span class="close-btn">&times;</span>
-      <p>v0.12</p>
-      <li>This is public beta preview version, so there is no any update news.</li>
+      <b><p>v2</p></b>
+      <ul> 
+        <li>Added snackbar back</li>
+        <li>Now snackbar will alwaya show</li>
+      </ul>
+      <hr>
+      <b><p>v0.12</p></b>
+      <ul> 
+        <li>This is public beta preview version, so there is no any update news.</li>
+      </ul>
     </div>
   </div>
 
-  <footer id="lanthFooter">Lanth v0.12.4758</footer>
+  <footer id="lanthFooter">Lanth v2</footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
