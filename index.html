@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Popup Window</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="deviceWarning" class="hidden">
+    <p>Any devices other than Computer are not available for this website yet.</p>
+  </div>
+
+  <div class="center-container">
+    <h2 id="passwordTitle" class="title">Enter password</h2>
+    <div class="input-group">
+      <input id="userInput" type="text" placeholder="Enter number...">
+      <button id="enterBtn">Enter</button>
+    </div>
+  </div>
+
+  <div id="snackbar">Wrong password</div>
+
+  <!-- Popup for 111 -->
+  <div id="customPopup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <p><strong>111:</strong> Summon this Window</p>
+      <p><strong>222:</strong> Test Link</p>
+    </div>
+  </div>
+
+  <!-- Popup for Lanth v0.12 -->
+  <div id="lanthPopup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <p>v0.12</p>
+      <li>This is public beta preview version, so there is no any update news.</li>
+    </div>
+  </div>
+
+  <footer id="lanthFooter">Lanth v0.12</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
