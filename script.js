@@ -5,18 +5,10 @@ document.documentElement.style.mozUserSelect = 'none';
 document.documentElement.style.msUserSelect = 'none';
 document.addEventListener('contextmenu', e => e.preventDefault());
 
-// Detect non-computer devices
-const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile|webOS/i.test(navigator.userAgent);
 
 window.addEventListener('DOMContentLoaded', () => {
   const mainContent = document.getElementById('mainContent');
   const deviceWarning = document.getElementById('deviceWarning');
-
-  if (isMobile) {
-    mainContent.style.display = 'none';
-    deviceWarning.classList.remove('hidden');
-    return;
-  }
 
   // Elements
   const input = document.getElementById('userInput');
@@ -216,3 +208,4 @@ window.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('mouseup', ()=>{ if(isDragging){ isDragging=false; pwMenu.style.transition='all 0.3s'; } });
 
 });
+
