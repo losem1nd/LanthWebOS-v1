@@ -103,7 +103,6 @@ footer {
   color: rgba(0, 0, 0, 0.4);
 }
 
-/* snackbar */
 #snackbar {
   visibility: hidden;
   min-width: 200px;
@@ -157,6 +156,7 @@ footer {
 
 .popup-content {
   position: relative;
+  padding: 20px;
 }
 
 /* fixed X at top-right */
@@ -196,7 +196,7 @@ footer {
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.3);
   width: 300px;
-  padding: 20px;
+  padding: 0px;
   z-index: 10;
   transition: opacity 0.5s ease;
 }
